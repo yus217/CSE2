@@ -22,15 +22,27 @@ System.out.println(" The total cost of belts is "+totalCostOfBelts+" dollars");
 double salesTaxOnPants=(pantsPrice)*(paSalesTax);
 double salesTaxOnShirts=(shirtPrice)*(paSalesTax);
 double salesTaxOnBelts=(beltCost)*(paSalesTax);
-System.out.println(" The sales tax charged on pants is "+salesTaxOnPants+" dollars");
-System.out.println(" The sales tax charged on shirts is "+salesTaxOnShirts+" dollars");
-System.out.println(" The sales tax charged on pants is "+salesTaxOnBelts+" dollars");
+int salestaxonpants= (int) salesTaxOnPants;
+int salestaxonshirts= (int) salesTaxOnShirts;
+int salestaxonbelts= (int) salesTaxOnBelts;
+double Salestaxonpants=(salestaxonpants)/1.00;
+double Salestaxonshirts=(salestaxonshirts)/1.00;
+double Salestaxonbelts=(salestaxonbelts)/1.00;
+
+System.out.println(" The sales tax charged on pants is "+Salestaxonpants+" dollars");
+System.out.println(" The sales tax charged on shirts is "+Salestaxonshirts+" dollars");
+System.out.println(" The sales tax charged on pants is "+Salestaxonbelts+" dollars");
 
 double totalCostOfPurchases=(totalCostOfPants)+(totalCostOfShirts)+(totalCostOfBelts);
 double totalSalestax=(totalCostOfPurchases)*(paSalesTax);
 double totalPaid=(totalCostOfPurchases)+(totalSalestax);
+int totalsalestax= (int) totalSalestax;
+int totalpaid= (int) totalPaid;
+double Totalsalestax= totalsalestax/1.00;
+double Totalpaid=totalpaid/1.00;
+
 System.out.println(" The total cost of purchases is "+totalCostOfPurchases+" dollars");
-System.out.println(" The total sales tax is "+totalSalestax+" dollars");
-System.out.println(" The total paid for this transaction is "+totalPaid+" dollars");
+System.out.println(" The total sales tax is "+Totalsalestax+" dollars");
+System.out.println(" The total paid for this transaction is "+Totalpaid+" dollars");
 }
     }
